@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEXORIA 2026 | Juri Fiesta | Bangalore University</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #c5a059; --gold-light: #e0c58e; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #050a12; color: #fff; scroll-behavior: smooth; }
+        .serif { font-family: 'Cinzel', serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(5, 10, 18, 0.75), rgba(5, 10, 18, 0.95)), 
+                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover; background-attachment: fixed; background-position: center;
+        }
+        /* Mobile adjustment for background attachment support */
+        @media (hover: none) {
+            .hero-bg { background-attachment: scroll; }
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1); transition: all 0.4s ease;
+        }
+        .text-gold {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            color: #c5a059; /* Fallback */
+        }
+        .event-card:hover { border-color: var(--gold); transform: translateY(-5px); background: rgba(197, 160, 89, 0.05); }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg min-h-screen flex flex-col items-center justify-center px-4 md:px-6 text-center py-20">
+        <h1 class="serif text-5xl sm:text-6xl md:text-9xl font-black mb-4 md:mb-2 tracking-[0.15em] md:tracking-[0.2em] text-gold break-words">LEXORIA</h1>
+        <p class="uppercase tracking-[0.3em] md:tracking-[0.4em] text-[10px] md:text-xs mb-8 md:mb-8 text-slate-400 italic">"Vibe. Voice. Verdict."</p>
+        
+        <!-- Countdown Timer -->
+        <div id="countdown" class="flex flex-wrap justify-center gap-3 md:gap-10 mb-10 md:mb-12">
+            <div class="glass p-3 md:p-4 min-w-[60px] md:min-w-[70px] rounded-lg border-gold/20">
+                <span id="days" class="serif text-xl md:text-4xl text-gold block">00</span>
+                <span class="text-[8px] uppercase tracking-widest text-slate-500">Days</span>
+            </div>
+            <div class="glass p-3 md:p-4 min-w-[60px] md:min-w-[70px] rounded-lg border-gold/20">
+                <span id="hours" class="serif text-xl md:text-4xl text-gold block">00</span>
+                <span class="text-[8px] uppercase tracking-widest text-slate-500">Hours</span>
+            </div>
+            <div class="glass p-3 md:p-4 min-w-[60px] md:min-w-[70px] rounded-lg border-gold/20">
+                <span id="minutes" class="serif text-xl md:text-4xl text-gold block">00</span>
+                <span class="text-[8px] uppercase tracking-widest text-slate-500">Mins</span>
+            </div>
+            <div class="glass p-3 md:p-4 min-w-[60px] md:min-w-[70px] rounded-lg border-gold/20">
+                <span id="seconds" class="serif text-xl md:text-4xl text-gold block">00</span>
+                <span class="text-[8px] uppercase tracking-widest text-slate-500">Secs</span>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center w-full max-w-xs md:max-w-none">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSzIWspAoBNOANb6abVA0KeUp7SO4Uh2bJ2u-z7YvBbCibgw/viewform" target="_blank" class="bg-[#c5a059] text-black w-full md:w-auto px-8 py-4 md:px-16 md:py-5 rounded-sm font-black uppercase tracking-[0.2em] text-xs md:text-sm hover:bg-[#e0c58e] transition shadow-2xl text-center">
+                Register for Juri Fiesta
+            </a>
+            <p class="mt-4 text-[10px] text-slate-500 tracking-[0.3em] uppercase">9th - 10th April 2026</p>
+        </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="py-16 md:py-24 px-4 md:px-8 bg-[#080e1a]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="serif text-2xl md:text-4xl text-center mb-12 md:mb-16 text-gold tracking-widest uppercase">The Arena of Talent</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Academic Card -->
+                <div class="glass p-6 md:p-8 event-card rounded-xl">
+                    <div class="flex items-center gap-4 mb-6 md:mb-8">
+                        <i class="fa-solid fa-scale-balanced text-2xl md:text-3xl text-[#c5a059]"></i>
+                        <h3 class="serif text-lg md:text-xl uppercase tracking-wider text-white">Academic</h3>
+                    </div>
+                    <ul class="text-[10px] md:text-[11px] space-y-3 md:space-y-4 uppercase tracking-[0.2em] text-slate-400">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Law Quiz</span><span class="text-[#c5a059]">₹222</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Judgement Writing</span><span class="text-[#c5a059]">₹139</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Case Analysis</span><span class="text-[#c5a059]">₹139</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Crime Scene Investigation</span><span class="text-[#c5a059]">₹249</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Bail Petition Drafting</span><span class="text-[#c5a059]">₹222</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Debate</span><span class="text-[#c5a059]">₹139</span></li>
+                    </ul>
+                </div>
+
+                <!-- Cultural Card -->
+                <div class="glass p-6 md:p-8 event-card rounded-xl">
+                    <div class="flex items-center gap-4 mb-6 md:mb-8">
+                        <i class="fa-solid fa-masks-theater text-2xl md:text-3xl text-[#c5a059]"></i>
+                        <h3 class="serif text-lg md:text-xl uppercase tracking-wider text-white">Cultural</h3>
+                    </div>
+                    <ul class="text-[10px] md:text-[11px] space-y-3 md:space-y-4 uppercase tracking-[0.2em] text-slate-400">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Dance (Solo/Group)</span><span class="text-[#c5a059]">₹169/399</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Singing (Solo/Group)</span><span class="text-[#c5a059]">₹169/399</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Fashion Walk</span><span class="text-[#c5a059]">₹399</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Beat Boxing</span><span class="text-[#c5a059]">₹169</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Dance Battle 1x1</span><span class="text-[#c5a059]">₹169</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Theatre</span><span class="text-[#c5a059]">₹399</span></li>
+                    </ul>
+                </div>
+
+                <!-- Creative Card -->
+                <div class="glass p-6 md:p-8 event-card rounded-xl">
+                    <div class="flex items-center gap-4 mb-6 md:mb-8">
+                        <i class="fa-solid fa-palette text-2xl md:text-3xl text-[#c5a059]"></i>
+                        <h3 class="serif text-lg md:text-xl uppercase tracking-wider text-white">Creative</h3>
+                    </div>
+                    <ul class="text-[10px] md:text-[11px] space-y-3 md:space-y-4 uppercase tracking-[0.2em] text-slate-400">
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Photography</span><span class="text-[#c5a059]">₹139</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Poetry Writing</span><span class="text-[#c5a059]">₹139</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Short Film Script</span><span class="text-[#c5a059]">₹222</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>On Spot Painting</span><span class="text-[#c5a059]">₹139</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Meme Making</span><span class="text-[#c5a059]">₹139</span></li>
+                        <li class="flex justify-between border-b border-white/5 pb-2"><span>Reel Making</span><span class="text-[#c5a059]">₹222</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RULES SECTION -->
+    <section id="rules" class="py-16 md:py-20 px-4 md:px-8 text-center bg-[#050a12]">
+        <h2 class="serif text-2xl md:text-3xl mb-10 md:mb-12 text-gold tracking-widest uppercase">Official Resources</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+            <div class="glass p-8 md:p-10 border border-gold/20 flex flex-col items-center group hover:bg-white/5 transition rounded-xl">
+                <i class="fa-solid fa-file-pdf text-4xl mb-4 text-red-500"></i>
+                <h4 class="serif text-[#c5a059] text-base md:text-lg mb-2 uppercase tracking-widest">Event Brochure</h4>
+                <a href="https://drive.google.com/file/d/1U-AT1TzVSbDbX_fIkgHPrm8Zg5MqRvu0/view?usp=sharing" target="_blank" class="w-full md:w-auto border border-[#c5a059] text-[#c5a059] px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-[#c5a059] hover:text-black transition mt-4 inline-block">Download Brochure</a>
+            </div>
+            <div class="glass p-8 md:p-10 border border-gold/20 flex flex-col items-center group hover:bg-white/5 transition rounded-xl">
+                <i class="fa-solid fa-shield-halved text-4xl mb-4 text-[#c5a059]"></i>
+                <h4 class="serif text-[#c5a059] text-base md:text-lg mb-2 uppercase tracking-widest">Official Rule Book</h4>
+                <a href="https://drive.google.com/file/d/13-KpiP1WBX8UuXtvtBNIvhQtv4n40u5V/view?usp=sharing" target="_blank" class="w-full md:w-auto border border-[#c5a059] text-[#c5a059] px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-[#c5a059] hover:text-black transition mt-4 inline-block">Download Rulebook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 md:py-16 px-4 md:px-8 border-t border-white/10 text-center bg-[#03070d]">
+        <div class="max-w-5xl mx-auto">
+            <p class="serif text-[#c5a059] text-lg md:text-xl mb-8 md:mb-6 uppercase tracking-widest">University Law College</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-12 text-[10px] text-slate-500 uppercase tracking-[0.2em]">
+                <!-- Vice-President (Left) -->
+                <div class="flex flex-col items-center">
+                    <p>Vice-President</p>
+                    <span class="text-white block mt-1 font-bold italic text-sm">Sahana M</span>
+                </div>
+                <!-- President (Middle) -->
+                <div class="flex flex-col items-center">
+                    <p>President</p>
+                    <span class="text-white block mt-1 font-bold italic text-sm">Deeksha Manjunath</span>
+                </div>
+                <!-- Finance Administrator (Right) -->
+                <div class="flex flex-col items-center">
+                    <p>Finance Administrator</p>
+                    <span class="text-white block mt-1 font-bold italic text-sm">Muhammad Ashfaq</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10">
+                <a href="https://www.instagram.com/lexoria26" target="_blank" class="text-[#c5a059] hover:text-white transition uppercase text-[10px] tracking-widest font-bold flex items-center">
+                    <i class="fa-brands fa-instagram text-xl mr-2"></i>@lexoria26
+                </a>
+                <span class="text-[10px] tracking-widest text-slate-400 uppercase">Contact: 99455 37006 / 7259603345</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const countdownDate = new Date("April 9, 2026 09:00:00").getTime();
+        const updateTimer = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+            document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+            if (distance < 0) { clearInterval(updateTimer); document.getElementById("countdown").innerHTML = "<p class='serif text-gold text-2xl md:text-3xl uppercase'>FEST BEGUN</p>"; }
+        }, 1000);
+    </script>
+</body>
+</html>
